@@ -1,118 +1,75 @@
+
 /*global*/
-/*global*/
-html{
-    font-size: 62.5;/*1rem=10px*/
+.error{
+    background-color: red;
 }
-*{
-    margin: 0;
-    padding: 0;
+#notifications{
+    height: 100px;
+    border-radius: 10px;
+    padding:1rem;
+}
+#pets{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 1rem;
+    margin-top: 2 rem;
+}
+.petCard{
+    background-color:blueviolet; 
+    padding: 1 rem;
+    border-radius:5px;
+}
+.btn-del{
+    background-color:transparent;
+    border:none;
+}
+.btn-del i:hover{
+    color: red;
 }
 
+ header{
+    padding: 15px;
+}
+h1{
+    font-family: 'Tangerine', cursive;
+    font-weight: bold 700;
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
 body{
+    background: whitesmoke;  
     font-family: 'Roboto', sans-serif;
-
+        
+    color: #EEFFFD;
+}
+.nav-link{
+    color: #EEFFFD;
+    
+}
+a:hover{
+    background-color: #0c5388;
 }
 
-a{
-    color: black;
-    text-decoration: none;
+main{
+    background: #4fb8dfd8;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    height: flex;
+    width: 60rem;
+    box-shadow: -3px -2px 6px #6c6565, 7px 9px 25px #0b0b0b;
 }
-p{
-    font-size: 1.6rem;
-    line-height: 2;
-}
-img{
-    max-width: 100%;
-}
-#container{
-    max-width: 100vh;
-    max-height: 60%vh;
-}
-
-#results {
-    background-color: rgb(177, 137, 78);
+footer{
+    margin-top: 90%;
     text-align: center;
 }
-/*utilities*/
-.container{
-    width: 70%;
-    margin: 0 auto ;
-}
-.flex-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 2rem;
- }
-@media(max-width:768px){
-    .container{
-        width: 90%;
-    }
-    .flex-container{
-       flex-direction: column;
-    }
-    
-}
-    /*header*/
 
-    header.site-header{
-    display: flex;
-    flex-direction:column;
-    justify-content: space-between;
-    background-image: url(../img/dogpic.jpg);
-    font-family: 'Open Sans', sans-serif;
-    height: 80vh;
-    background-position:no-repeat bottom center;
-    background-size: cover;
 
-}
-header.site-header h1{
-    font-size: 3.5rem;
-    color: white;
-    margin: 0;
-    padding: 0;
-
-}
-header.site-header p{
-    color: white;
-    text-align: center;
-    
-
-}
-.menu{
-    
-    display:flex;
-    width: 25rem;
-}
-.menu a{
-    display:block;
-    color: white;
-    font-size: 1.6rem;
-}
-/*mobile menu*/
-.mobile-menu{
-    display: none;
-}
-.bars{
-    width:2rem;
-
-}
-nav#navigation{
-    display: flex;
-    justify-content: space-between;
-
-}
-@media(max-width:768px){
-    .mobile-menu{
-        display: block;
-    }
-    nav#navigation{
-        display: none;
-    }
-    nav#navigation{
-        flex-direction: column;
-    }
-}
-#navigation:target{
-    display:block;
+ 
+tablet{
+    padding-top: 10px;
 }
